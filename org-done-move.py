@@ -15,13 +15,13 @@ class OrgDoneMove:
         return res
 
     def move_task(self, movetasks):
-        f = open("C:\Business\\FinTask.org", "a+")
+        f = open("~/FinTask.org", "a+")
         for task in movetasks:
             f.write(task)
         f.close()
 
     def rewrite_org_file(self, remaintask):
-        f = open("C:\Business\\Todo.org", "w")
+        f = open("~/Todo.org", "w")
         for task in remaintask:
             f.write(task)
         f.close
@@ -66,4 +66,4 @@ class OrgDoneMove:
 
 if __name__ == '__main__':
     orgdonemoveClass = OrgDoneMove()
-    orgdonemoveClass.read_file("C:\Business\Todo.org")
+    orgdonemoveClass.read_file("~/Todo.org")
